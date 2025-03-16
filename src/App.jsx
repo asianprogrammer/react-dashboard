@@ -8,8 +8,8 @@ function App() {
     <>
       <Nav />
       <Routes>
-        <Route path="user" element={<User />} />
-        <Route path="/" />
+        <Route path="users" element={<User />} />
+        <Route path="/" element={<h1>Dashboard</h1>} />
       </Routes>
     </>
   )

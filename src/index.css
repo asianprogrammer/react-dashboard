@@ -12,3 +12,20 @@ body {
   font-family: sans-serif;
   background: #FAFAFA;
 }
+
+.navigation-urls a.active div {
+  background: red;
+}
+
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+.icon img {
+  width: 100%;
+  height: 100%;
+  filter: invert(1);
+  object-fit: contain;
+}
