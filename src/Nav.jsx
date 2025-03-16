@@ -7,35 +7,35 @@ import SettingsIcon from './assets/icons/setting.svg';
 export default function Nav(){
     return (
         <div className="side-nave">
-            <h3>Admin Dashboard</h3>
+            <h3 className='nav-title'>Admin Dashboard</h3>
             <div className="navigation-urls">
                 <NavLink to="/" activeclassname="active">
-                    <div className='flex FY-center'>
-                        <div className="icon flex F-center">
+                    <div className='nav-list flex FY-center'>
+                        <div className="icon MR">
                             <img width="100%" src={HomeIcon} alt="Home Icon" />
                         </div>
                         <span>Dashboard</span>
                     </div>
                 </NavLink>
                 <NavLink to="/roles" activeclassname="active">
-                    <div>
-                        <div className="icon">
+                    <div className='nav-list flex FY-center'>
+                        <div className="icon MR">
                             <img src={RolesIcon} alt="Roles Icon"  />
                         </div>
                         <span>Roles</span>
                     </div>
                 </NavLink>
                 <NavLink to="/users" activeclassname="active">
-                    <div>
-                        <div className="icon">
+                    <div className='nav-list flex FY-center'>
+                        <div className="icon MR">
                             <img src={UsersIcon} alt="Roles Icon"  />
                         </div>
                         <span>Users</span>
                     </div>
                 </NavLink>
                 <NavLink to="/settings" activeclassname="active">
-                    <div>
-                        <div className="icon">
+                    <div className='nav-list flex FY-center'>
+                        <div className="icon MR">
                             <img src={SettingsIcon} alt="Roles Icon"  />
                         </div>
                         <span>Settings</span>
