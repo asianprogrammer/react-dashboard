@@ -93,3 +93,11 @@ body {
   background: #ffffff;
   box-shadow: 0 0 5px #ddd;
 }
+
+.panel .user {
+  height: 40px;
+  padding: 0 15px;
+  color: #ffffff;
+  border-radius: 25px;
+  background: black;
+}
