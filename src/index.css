@@ -110,7 +110,8 @@ body {
 
 /* Input field */
 input,
-select {
+select,
+textarea {
   padding: 8px 10px;
   outline: none;
   border-radius: 4px;
@@ -169,8 +170,14 @@ table th {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.model input {
+.model input,
+textarea {
   width: 95%;
+  font-family: sans-serif;
+}
+
+textarea {
+  height: 100px;
 }
 
 .error {
