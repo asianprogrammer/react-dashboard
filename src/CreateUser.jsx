@@ -2,7 +2,7 @@ import { NavLink } from "react-router";
 import { useState } from "react";
 
 export default function UserCreate(){
-    const [users, setUsers] = useState([{name: '',email:'',role: 'admin'}])
+    const [users, setUsers] = useState([{name: '',email:'',role_id: 'admin'}])
 
     function handle(e) {
         const { name, value } = e.target;
@@ -36,12 +36,12 @@ export default function UserCreate(){
                 </div>
                 <div className="input MTB">
                     <div>Role</div>
-                    <select className="w100" name="role" onChange={handle} defaultValue={users[0].role}>
-                        <option value="admin">Admin</option>
-                        <option value="viewer">Viewer</option>
-                        <option value="editor">Editor</option>
-                        <option value="manager">Manager</option>
-                        <option value="moderator">Moderator</option>
+                    <select className="w100" name="role_id" onChange={handle} defaultValue={users[0].role}>
+                        <option value="1">Admin</option>
+                        <option value="2">Viewer</option>
+                        <option value="3">Editor</option>
+                        <option value="4">Manager</option>
+                        <option value="5">Moderator</option>
                     </select>
                 </div>
 
