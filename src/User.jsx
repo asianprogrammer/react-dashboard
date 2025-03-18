@@ -1,3 +1,5 @@
+import { NavLink } from "react-router";
+
 export default function User(){
     return (
         <>
@@ -6,15 +8,17 @@ export default function User(){
             
             <div className="MTB flex FY-center F-space">
             <input type="search" placeholder="Search by user name" />
-            <button>Add User</button>
+            <NavLink to="create"><button>Add User</button></NavLink>
             </div>
 
             <table border="1">
                 <thead>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>Role</th>
-                    <th>Action</th>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Role</th>
+                        <th>Action</th>
+                    </tr>
                 </thead>
                 <tbody>
                     <tr>

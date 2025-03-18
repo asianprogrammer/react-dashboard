@@ -24,8 +24,10 @@ body {
 .body {
   width: 100%;
   height: 100vh;
-  overflow: auto;
+  overflow: hidden;
+  overflow-y: auto;
   padding: 0 20px;
+  position: relative;
 }
 
 .nav-title {
@@ -107,11 +109,13 @@ body {
 }
 
 /* Input field */
-input {
+input,
+select {
   padding: 8px 10px;
   outline: none;
   border-radius: 4px;
   border: solid 1px #e6e6e6;
+  background: none;
 }
 
 input:focus {
@@ -149,4 +153,27 @@ table tr td,
 table th {
   border-left: none;
   border-right: none;
+}
+
+.w100 {
+  width: 100%;
+}
+
+/* Creating Model */
+.model {
+  width: 100%;
+  padding: 30px;
+  max-width: 400px;
+  border-radius: 4px;
+  margin-top: 5em;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.model input {
+  width: 95%;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
 }
